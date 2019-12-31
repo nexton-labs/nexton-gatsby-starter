@@ -16,9 +16,15 @@ This is a simple starter with a basic structure and tools ready to use, so you c
 ## Usage
 
 Install:
-```yarn```
+```
+yarn
+```
 Start develop:
-```yarn start```
+```
+yarn start
+```
 Build:
-```yarn build```
+```
+yarn build
+```
 

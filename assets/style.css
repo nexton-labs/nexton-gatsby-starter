@@ -1,0 +1,11 @@
+/* Switches between desktop and mobile menu */
+@media screen and (max-width: 959px) {
+  .desktop-menu {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .mobile-menu {
+    display: none;
+  }
+}

@@ -1,11 +1,11 @@
 import React from 'react';
-import { Flex, Box, Text } from 'rebass';
+import { Flex, Box, Image } from 'rebass';
+
+import Starter from '../../assets/images/starter.png';
 
 const HiThere = () => (
-  <Flex>
-    <Box width="100%" height="100px" p={4}>
-      <Text textAlign="center">Gatsby Starter</Text>
-    </Box>
+  <Flex alignItems="center" flexDirection="column" my={[5, 6]} mx={[5, 6]}>
+    <Image src={Starter}></Image>
   </Flex>
 );
 

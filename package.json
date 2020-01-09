@@ -1,7 +1,7 @@
 {
   "name": "nexton-gatsby-starter",
   "version": "1.0.1",
-  "description": "Nexton Site Gatsby Starter",
+  "description": "Gatsby Starter",
   "main": "index.js",
   "scripts": {
     "build": "gatsby clean && gatsby build",

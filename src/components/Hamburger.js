@@ -17,10 +17,9 @@ const Hamburger = ({ isPinned, selected }) => {
       <Box width="100%" height="1px" mt={4}></Box>
       <Box my={4}>
         <HeaderLink selected={selected === 'about'} to="/about">
-          ABOUT NEXTON
+          Section 01
         </HeaderLink>
       </Box>
-      
     </Menu>
   );
 };

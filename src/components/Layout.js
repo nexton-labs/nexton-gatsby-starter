@@ -43,12 +43,8 @@ const Layout = ({ children, selected }) => {
       <ThemeProvider theme={theme}>
         <ScrollingProvider>
           <Helmet />
-          {/* <StaticHeader selected={selected} /> */}
-          {/* {children} */}
-          {/* <Footer /> */}
           <Flex
             justifyContent="space-between"
-            // alignItems="center"
             flexDirection="column"
             minHeight={'100vh'}
             height="100vh"

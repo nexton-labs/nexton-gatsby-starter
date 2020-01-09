@@ -47,7 +47,6 @@ const Layout = ({ children, selected }) => {
             justifyContent="space-between"
             flexDirection="column"
             minHeight={'100vh'}
-            height="100vh"
           >
             <Box>
               <StaticHeader selected={selected} />

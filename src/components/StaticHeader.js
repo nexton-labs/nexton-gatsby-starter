@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import Headroom from 'react-headroom';
-import { Flex, Image, Button, Box } from 'rebass';
+import { Flex, Image, Text, Box } from 'rebass';
 import HeaderLink from './HeaderLink';
 import Hamburger from './Hamburger';
 import { Link } from 'gatsby';
-import Logo from '../../assets/images/nexton-logo.svg';
+
+import Icon from '../../assets/images/icon.svg';
 
 const StaticHeader = ({ showBuild, selected }) => {
   const [pinned, setPinned] = useState(true);
@@ -28,22 +29,31 @@ const StaticHeader = ({ showBuild, selected }) => {
           pt={'16px'}
           pb={'10px'}
         >
-          <Link to="/">
-            <Image
-              src={Logo}
-              width="120px"
-              ml={[0, 2, 4]}
-              mt={'4px'}
-              alt="Nexton Logo"
-              style={{
-                cursor: 'pointer',
-              }}
-            />
-          </Link>
+          <Flex alignItems="center">
+            <Link to="/">
+              <Image
+                src={Icon}
+                width="30px"
+                ml={[0, 2, 4]}
+                mt={'4px'}
+                alt="Logo"
+                style={{
+                  cursor: 'pointer',
+                }}
+              />
+            </Link>
+            <Box width="1px" height="47px" bg="#AAAAAA" mx={3}></Box>
+            <Text color="#081E2A" fontSize="28px" fontWeight="black">
+              Gatsby
+            </Text>
+            <Text color="#4C5E68" fontSize="28px" fontWeight="black">
+              Starter
+            </Text>
+          </Flex>
           <Flex mr={[0, 3, 5]} className="desktop-menu">
-            <Box mr={[4, 4, 4, 5]} mt={2} fontSize={1}>
+            <Box mr={[4, 4, 4, 5]}>
               <HeaderLink selected={selected === 'about'} to="/about">
-                ABOUT
+                Section 01
               </HeaderLink>
             </Box>
           </Flex>

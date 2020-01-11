@@ -5,6 +5,7 @@ import { ScrollingProvider } from 'react-scroll-section';
 import theme from '../../theme';
 import Helmet from './Helmet';
 
+import { Flex, Box } from 'rebass';
 import StaticHeader from './StaticHeader';
 import Footer from './Footer';
 
@@ -42,9 +43,19 @@ const Layout = ({ children, selected }) => {
       <ThemeProvider theme={theme}>
         <ScrollingProvider>
           <Helmet />
-          <StaticHeader selected={selected} />
-          {children}
-          <Footer />
+          <Flex
+            justifyContent="space-between"
+            flexDirection="column"
+            minHeight={'100vh'}
+          >
+            <Box>
+              <StaticHeader selected={selected} />
+            </Box>
+            <Box>{children}</Box>
+            <Box>
+              <Footer />
+            </Box>
+          </Flex>
         </ScrollingProvider>
       </ThemeProvider>
     </Fragment>

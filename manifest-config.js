@@ -1,8 +1,8 @@
 const theme = require('./theme');
 
 module.exports = {
-  name: 'Nexton',
-  short_name: 'Nexton',
+  name: 'Gatsby Starter',
+  short_name: 'Gatsby Starter',
   start_url: '/',
   background_color: theme.colors.background,
   theme_color: theme.colors.primary,

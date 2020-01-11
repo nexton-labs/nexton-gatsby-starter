@@ -1,11 +1,13 @@
 import React from 'react';
-import { Flex, Box, Text } from 'rebass';
-import { Link } from 'gatsby';
+import { Flex, Box, Text, Link } from 'rebass';
 
 const Footer = () => (
   <Flex>
-    <Box width="100%" height="100px">
-      <Text textAlign="center">Footer</Text>
+    <Box width="100%" height="60px" bg="#DCEAEA">
+      <Text textAlign="center" mt={3} fontSize={2}>
+        @2020 - Gatsby Starter -{' '}
+        <Link href="https://www.nextonlabs.com/">Nexton Labs</Link>
+      </Text>
     </Box>
   </Flex>
 );

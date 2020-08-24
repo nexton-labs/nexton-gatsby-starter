@@ -43,10 +43,10 @@ const StaticHeader = ({ showBuild, selected }) => {
               />
             </Link>
             <Box width="1px" height="47px" bg="#AAAAAA" mx={3}></Box>
-            <Text color="#081E2A" fontSize="28px" fontWeight="black">
+            <Text color="#081E2A" fontSize="28px" fontWeight="900">
               Gatsby
             </Text>
-            <Text color="#4C5E68" fontSize="28px" fontWeight="black">
+            <Text color="#4C5E68" fontSize="28px" fontWeight="900">
               Starter
             </Text>
           </Flex>
